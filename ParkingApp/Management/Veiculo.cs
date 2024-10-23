@@ -2,9 +2,9 @@
 {
     public class Veiculo
     {
-        public Veiculo(string Placa)
+        public Veiculo(string placa)
         {
-            PlacaVeiculo = Placa;
+            PlacaVeiculo = placa;
             HoraEntrada = DateTime.Now;
         }
         public string PlacaVeiculo { get; set; }

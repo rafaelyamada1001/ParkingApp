@@ -1,8 +1,7 @@
 ﻿
-using MySqlX.XDevAPI;
 using ParkingApp.DataBase;
 
-namespace ParkingApp.Management
+/*namespace ParkingApp.Management
 {
     public class Cliente
     {
@@ -31,9 +30,9 @@ namespace ParkingApp.Management
 
             //var cliente = new Cliente(nome, sobrenome, telefone);
             var bancoDeDados = new BancoDados();
-            bancoDeDados.SalvarCliente(this);
+            //bancoDeDados.SalvarCliente(this);
             //clientes.Add(cliente);
             Console.WriteLine($"Cliente {Nome} {Sobrenome} cadastrado com sucesso.");
         }
     }
-}
+}*/

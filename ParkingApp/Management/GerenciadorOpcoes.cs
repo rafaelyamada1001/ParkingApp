@@ -6,7 +6,7 @@ namespace ParkingApp.Management
     {
         public static void GerEstacionamento()
         {
-            var estacionamento = new Estacionamento(10, 5.00m);        
+            var estacionamento = new Estacionamento(20, 10.00m);
 
             while (true)
             {
@@ -15,7 +15,6 @@ namespace ParkingApp.Management
                 Console.WriteLine("2 - Retirar carro");
                 Console.WriteLine("3 - Listar carros estacionados");
                 Console.WriteLine("4 - Exibir vagas disponíveis");
-                Console.WriteLine("5 - Cadastrar Cliente");
 
                 Console.Write("Escolha uma opção:");
                 string registerPark = Console.ReadLine();
@@ -26,12 +25,8 @@ namespace ParkingApp.Management
                         return;
                     case "1":
                         Console.Write("Digite a Placa do Veículo:");
-                        var placa = Console.ReadLine();
-                        Console.Write("Digite o Id do Cliente:");
-                        v = Console.ReadLine();                       
+                        var placa = Console.ReadLine();                      
                         estacionamento.AdicionarVeiculo(placa);
-                        
-                        
                         break;
                     case "2":
                         Console.Write("Digite a placa do Veículo:");
@@ -45,16 +40,7 @@ namespace ParkingApp.Management
                         estacionamento.VagasDesocupadas();
                         break;
                     case "5":
-                        Console.Write("Nome:");
-                        var nome = Console.ReadLine();
-                        Console.Write("Sobrenome:");
-                        var sobrenome = Console.ReadLine();
-                        Console.Write("telefone:");
-                        var telefone = Console.ReadLine();
-                        var cliente = new Cliente(nome, sobrenome, telefone);
-                        //var bancoDeDados = new BancoDados();
-                        //bancoDeDados.SalvarCliente(cliente);
-                        cliente.CadastrarCliente();
+                        Console.Clear();
                         break;
                     default: 
                         Console.WriteLine("Opção inválida digite novamente");

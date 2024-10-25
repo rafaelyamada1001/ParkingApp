@@ -5,7 +5,7 @@
         public Veiculo(string placa)
         {
             PlacaVeiculo = placa;
-            HoraEntrada = DateTime.Now;
+            HoraEntrada = DateTime.Now;           
         }
         public string PlacaVeiculo { get; set; }
         public DateTime HoraEntrada { get; set; }
